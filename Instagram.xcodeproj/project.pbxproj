@@ -15,6 +15,7 @@
 		54C6F777286A56AE002D2AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C6F775286A56AE002D2AE8 /* LaunchScreen.storyboard */; };
 		54C6F77A286A56AE002D2AE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C6F779286A56AE002D2AE8 /* main.m */; };
 		54C6F781286A6593002D2AE8 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C6F780286A6593002D2AE8 /* Keys.plist */; };
+		54C6F784286A6D5C002D2AE8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C6F783286A6D5C002D2AE8 /* LoginViewController.m */; };
 		9FD2688C4A8868729FDAEE81 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B83077472F364A385D8B459 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		54C6F778286A56AE002D2AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54C6F779286A56AE002D2AE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54C6F780286A6593002D2AE8 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		54C6F782286A6D5C002D2AE8 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		54C6F783286A6D5C002D2AE8 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5B83077472F364A385D8B459 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E29B68909CB84B470F66DF /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,8 +93,18 @@
 				54C6F778286A56AE002D2AE8 /* Info.plist */,
 				54C6F779286A56AE002D2AE8 /* main.m */,
 				54C6F780286A6593002D2AE8 /* Keys.plist */,
+				54C6F785286A6DF6002D2AE8 /* ViewControllers */,
 			);
 			path = Instagram;
+			sourceTree = "<group>";
+		};
+		54C6F785286A6DF6002D2AE8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				54C6F782286A6D5C002D2AE8 /* LoginViewController.h */,
+				54C6F783286A6D5C002D2AE8 /* LoginViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D40D5C3A84305C06B5162C1E /* Pods */ = {
@@ -222,6 +235,7 @@
 				54C6F769286A56AD002D2AE8 /* AppDelegate.m in Sources */,
 				54C6F77A286A56AE002D2AE8 /* main.m in Sources */,
 				54C6F76C286A56AD002D2AE8 /* SceneDelegate.m in Sources */,
+				54C6F784286A6D5C002D2AE8 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
