@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5497F3DC286AAD2D00432E15 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5497F3DB286AAD2D00432E15 /* HomeViewController.m */; };
 		54C6F769286A56AD002D2AE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C6F768286A56AD002D2AE8 /* AppDelegate.m */; };
 		54C6F76C286A56AD002D2AE8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C6F76B286A56AD002D2AE8 /* SceneDelegate.m */; };
-		54C6F76F286A56AD002D2AE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C6F76E286A56AD002D2AE8 /* ViewController.m */; };
 		54C6F772286A56AD002D2AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C6F770286A56AD002D2AE8 /* Main.storyboard */; };
 		54C6F774286A56AE002D2AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C6F773286A56AE002D2AE8 /* Assets.xcassets */; };
 		54C6F777286A56AE002D2AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C6F775286A56AE002D2AE8 /* LaunchScreen.storyboard */; };
@@ -21,13 +21,13 @@
 
 /* Begin PBXFileReference section */
 		1A3BFFE5A0CB3B859D724ABB /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		5497F3DA286AAD2D00432E15 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5497F3DB286AAD2D00432E15 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		54C6F764286A56AD002D2AE8 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C6F767286A56AD002D2AE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54C6F768286A56AD002D2AE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		54C6F76A286A56AD002D2AE8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		54C6F76B286A56AD002D2AE8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		54C6F76D286A56AD002D2AE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		54C6F76E286A56AD002D2AE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		54C6F771286A56AD002D2AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54C6F773286A56AE002D2AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54C6F776286A56AE002D2AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,8 +85,6 @@
 				54C6F768286A56AD002D2AE8 /* AppDelegate.m */,
 				54C6F76A286A56AD002D2AE8 /* SceneDelegate.h */,
 				54C6F76B286A56AD002D2AE8 /* SceneDelegate.m */,
-				54C6F76D286A56AD002D2AE8 /* ViewController.h */,
-				54C6F76E286A56AD002D2AE8 /* ViewController.m */,
 				54C6F770286A56AD002D2AE8 /* Main.storyboard */,
 				54C6F773286A56AE002D2AE8 /* Assets.xcassets */,
 				54C6F775286A56AE002D2AE8 /* LaunchScreen.storyboard */,
@@ -101,6 +99,8 @@
 		54C6F785286A6DF6002D2AE8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5497F3DA286AAD2D00432E15 /* HomeViewController.h */,
+				5497F3DB286AAD2D00432E15 /* HomeViewController.m */,
 				54C6F782286A6D5C002D2AE8 /* LoginViewController.h */,
 				54C6F783286A6D5C002D2AE8 /* LoginViewController.m */,
 			);
@@ -231,11 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C6F76F286A56AD002D2AE8 /* ViewController.m in Sources */,
 				54C6F769286A56AD002D2AE8 /* AppDelegate.m in Sources */,
 				54C6F77A286A56AE002D2AE8 /* main.m in Sources */,
 				54C6F76C286A56AD002D2AE8 /* SceneDelegate.m in Sources */,
 				54C6F784286A6D5C002D2AE8 /* LoginViewController.m in Sources */,
+				5497F3DC286AAD2D00432E15 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
