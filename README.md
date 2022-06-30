@@ -39,8 +39,8 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1.How to build my own API
+2.Implementing stretch features
 
 ## Video Walkthrough
 
@@ -58,7 +58,8 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 ## Notes
 
 Describe any challenges encountered while building the app.
-
+I encountered an error which made my app crash severally
+I did not get my IOS device so I had to run it through another phone.
 ## License
 
     Copyright [yyyy] [name of copyright owner]
