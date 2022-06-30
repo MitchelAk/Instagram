@@ -8,17 +8,19 @@
 #import "PhotoViewController.h"
 #import "Parse/Parse.h"
 #import "Post.h"
+#import "SceneDelegate.h"
 
-@interface PhotoViewController ()
+@interface PhotoViewController ()  <UITextFieldDelegate>
 @property (strong, nonatomic)UIImage *postimage;
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet UITextField *captionField;
 
 @end
 
 @implementation PhotoViewController 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+ 
     // Do any additional setup after loading the view.
 }
 
@@ -29,7 +31,7 @@
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
 
     // Do something with the images (based on your use case)
-    UIImage *resizedImage = [self resizeImage:originalImage withSize:CGSizeMake(200, 200)];
+    UIImage *resizedImage = [self resizeImage:originalImage withSize:CGSizeMake(300, 300)];
         self.photoImageView.image = resizedImage;
     
     // Dismiss UIImagePickerController to go back to your original view controller
@@ -71,12 +73,12 @@
     return newImage;
 }
 - (IBAction)didTapShare:(id)sender {
-    Post *post = [Post new];
-        PFFileObject *imageFile = [PFFileObject fileObjectWithName:@"image.png" data:UIImagePNGRepresentation(self.photoImageView.image)];
-        post.image = imageFile;
-//        post.caption = self.captionTextFeild.text;
+//    Post *post = [Post new];
+//        PFFileObject *imageFile = [PFFileObject fileObjectWithName:@"image.png" data:UIImagePNGRepresentation(self.photoImageView.image)];
+//        post.image = imageFile;
+//        post.caption = self.captionField.text;
         
-        [post saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+    [Post postUserImage: self.photoImageView.image withCaption:self.captionField.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
             if(error != nil){
                 NSLog(@"User share failed: %@", error.localizedDescription);
                
@@ -84,8 +86,7 @@
                 NSLog(@"User successfully shared post");
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
-        }];
-    
+    }];
 }
 
 
@@ -102,3 +103,4 @@
 */
 
 @end
+
