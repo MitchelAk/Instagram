@@ -9,6 +9,7 @@
 #import "Parse/Parse.h"
 #import "Post.h"
 #import "SceneDelegate.h"
+#import "HomeViewController.h"
 
 @interface PhotoViewController ()  <UITextFieldDelegate>
 @property (strong, nonatomic)UIImage *postimage;
@@ -73,10 +74,6 @@
     return newImage;
 }
 - (IBAction)didTapShare:(id)sender {
-//    Post *post = [Post new];
-//        PFFileObject *imageFile = [PFFileObject fileObjectWithName:@"image.png" data:UIImagePNGRepresentation(self.photoImageView.image)];
-//        post.image = imageFile;
-//        post.caption = self.captionField.text;
         
     [Post postUserImage: self.photoImageView.image withCaption:self.captionField.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
             if(error != nil){
@@ -89,18 +86,10 @@
     }];
 }
 
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)didTapClose:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
-*/
 
 @end
 

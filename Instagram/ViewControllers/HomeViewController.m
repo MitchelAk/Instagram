@@ -11,6 +11,7 @@
 #import "LoginViewController.h"
 #import "GramCell.h"
 #import "Post.h"
+#import "DetailsViewController.h"
 
 @interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -74,22 +75,25 @@
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    // forIndexPath: indexPath
     GramCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GramCell"];
     Post *thisPost = self.postArray[indexPath.row];
     cell.post = thisPost;
     
     return cell;
 }
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"ComposeSegue"]) {
+        
+    } else if ([[segue identifier] isEqualToString:@"DetailsSegue"]) {
+        DetailsViewController *detailVC = [segue destinationViewController];
+        detailVC.post = self.postArray[[self.tableView indexPathForCell:sender].row];
+    
+    }
 }
-*/
+
     @end
  
     
